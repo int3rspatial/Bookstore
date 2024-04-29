@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace BookstoreWeb.Migrations
+namespace Bookstore.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class AddCategoryTableToDb : Migration
