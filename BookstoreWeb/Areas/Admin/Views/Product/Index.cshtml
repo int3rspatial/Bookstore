@@ -22,28 +22,22 @@
             <thead class="table-dark">
                 <tr>
                     <th>Book Title</th>
-                    <th>Description</th>
                     <th>ISBN</th>
                     <th>Author</th>
                     <th>List Price</th>
-                    <th>Price</th>
-                    <th>Price 50</th>
-                    <th>Price 100</th>
+                    <th>Category</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var obj in Model.OrderBy(x => x.Id))
+                @foreach (var obj in Model)
                 {
                     <tr>
                         <td>@obj.Title</td>
-                        <td>@obj.Description</td>
                         <td>@obj.ISBN</td>
                         <td>@obj.Author</td>
                         <td>@obj.ListPrice</td>
-                        <td>@obj.Price</td>
-                        <td>@obj.Price50</td>
-                        <td>@obj.Price100</td>
+                        <td></td>
                         <td>
                             <div class="btn btn-group" role="group">
                                 <a asp-controller="Product" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-warning mx-2">
