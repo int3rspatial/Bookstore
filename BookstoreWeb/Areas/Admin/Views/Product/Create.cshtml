@@ -1,4 +1,4 @@
-﻿@model Product
+﻿@model ProductVM
 
 <div class="card shadow border-dark border-1 mt-4">
     <div class="card-header bg-primary bg-gradient py-3">
@@ -13,51 +13,56 @@
         <form method="post" class="row">
             <div class="border p-3">
                 <div class="form-floating col-12">
-                    <input asp-for="Title" class="form-control" placeholder="Type here" />
-                    <label asp-for="Title"></label>
-                    <span asp-validation-for="Title" class="text-danger"></span>
+                    <input asp-for="Product.Title" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.Title"></label>
+                    <span asp-validation-for="Product.Title" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <textarea asp-for="Description" class="form-control" rows="5" placeholder="Type here"></textarea>
-                    <label asp-for="Description"></label>
-                    <span asp-validation-for="Description" class="text-danger"></span>
+                    <textarea asp-for="Product.Description" class="form-control" rows="5" placeholder="Type here"></textarea>
+                    <label asp-for="Product.Description"></label>
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <input asp-for="ISBN" class="form-control" placeholder="Type here" />
-                    <label asp-for="ISBN"></label>
-                    <span asp-validation-for="ISBN" class="text-danger"></span>
+                    <input asp-for="Product.ISBN" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.ISBN"></label>
+                    <span asp-validation-for="Product.ISBN" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <input asp-for="Author" class="form-control" placeholder="Type here" />
-                    <label asp-for="Author"></label>
-                    <span asp-validation-for="Author" class="text-danger"></span>
+                    <input asp-for="Product.Author" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.Author"></label>
+                    <span asp-validation-for="Product.Author" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <input asp-for="ListPrice" class="form-control" placeholder="Type here" />
-                    <label asp-for="ListPrice"></label>
-                    <span asp-validation-for="ListPrice" class="text-danger"></span>
+                    <input asp-for="Product.ListPrice" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.ListPrice"></label>
+                    <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <input asp-for="Price" class="form-control" placeholder="Type here" />
-                    <label asp-for="Price"></label>
-                    <span asp-validation-for="Price" class="text-danger"></span>
+                    <input asp-for="Product.Price" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.Price"></label>
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <input asp-for="Price50" class="form-control" placeholder="Type here" />
-                    <label asp-for="Price50"></label>
-                    <span asp-validation-for="Price50" class="text-danger"></span>
+                    <input asp-for="Product.Price50" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.Price50"></label>
+                    <span asp-validation-for="Product.Price50" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <input asp-for="Price100" class="form-control" placeholder="Type here" />
-                    <label asp-for="Price100"></label>
-                    <span asp-validation-for="Price100" class="text-danger"></span>
+                    <input asp-for="Product.Price100" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.Price100"></label>
+                    <span asp-validation-for="Product.Price100" class="text-danger"></span>
                 </div>
                 <div class="form-floating mt-3 col-12">
-                    <select asp-for="CategoryId" asp-items="@(ViewData["CategoryList"] as IEnumerable<SelectListItem>)" class="form-select">
+                    <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
                         <option disabled selected>--Select Category--</option>
                     </select>
-                    <label asp-for="CategoryId"></label>
-                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    <label asp-for="Product.CategoryId"></label>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                </div>
+                <div class="form-floating mt-3 col-12">
+                    <input asp-for="Product.ImageUrl" class="form-control" placeholder="Type here" />
+                    <label asp-for="Product.ImageUrl"></label>
+                    <span asp-validation-for="Product.ImageUrl" class="text-danger"></span>
                 </div>
 
                 <div class="row pt-3">
