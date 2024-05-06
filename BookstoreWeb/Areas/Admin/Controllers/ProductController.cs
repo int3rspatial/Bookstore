@@ -19,7 +19,7 @@ namespace BookstoreWeb.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<Product> products = _unitOfWork.Product.GetAll().ToList();
+            List<Product> products = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
             return View(products);
         }
 
@@ -81,15 +81,18 @@ namespace BookstoreWeb.Areas.Admin.Controllers
 
                 if(productVM.Product.Id == 0)
                 {
+                    //create
                     _unitOfWork.Product.Add(productVM.Product);
+                    TempData["success"] = "Product created successfully";
                 }
                 else
                 {
+                    //update
                     _unitOfWork.Product.Update(productVM.Product);
+                    TempData["success"] = "Product updated successfully";
                 }
 
                 _unitOfWork.Save();
-                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             else
