@@ -35,6 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\images\readme\" />
     <Folder Include="wwwroot\images\product\" />
   </ItemGroup>
 
