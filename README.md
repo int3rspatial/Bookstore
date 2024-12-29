@@ -14,7 +14,7 @@ This web application is designed for a bookstore that sells books to individual 
 + [.NET](https://learn.microsoft.com/en-us/dotnet/welcome)
 + [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server)
 + [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
-+ [ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-9.0&tabs=visual-studio](https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-9.0))
++ [ASP.NET Core MVC](https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-9.0)
 #### Additional resources
 + [tinyMCE](https://www.tiny.cloud/)
 + [DataTables](https://datatables.net/)
