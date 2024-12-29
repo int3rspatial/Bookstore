@@ -32,21 +32,12 @@ This web application is designed for a bookstore that sells books to individual 
 ![screen3](/BookstoreWeb/wwwroot/images/readme/register.png)
 ##### Login page
 ![screen4](/BookstoreWeb/wwwroot/images/readme/login.png)
-##### Log in as admin user
-![screen5](/BookstoreWeb/wwwroot/images/readme/login_as_admin.png)
-#
-##### Admin view
-![screen6](/BookstoreWeb/wwwroot/images/readme/admin_view.png)
 #
 ##### List of categories (genres)
 ![screen7](/BookstoreWeb/wwwroot/images/readme/category_list.png)
-##### Category creation page
-![screen8](/BookstoreWeb/wwwroot/images/readme/category_create.png)
 #
 ##### List of products (books)
 ![screen9](/BookstoreWeb/wwwroot/images/readme/product_list.png)
-##### Search for specific book
-![screen10](/BookstoreWeb/wwwroot/images/readme/product_list_search.png)
 ##### Add book page
 ![screen11](/BookstoreWeb/wwwroot/images/readme/product_create.png)
 ##### Update information about book
